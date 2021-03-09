@@ -27,11 +27,13 @@ To win, you have to pass the wining time (You should not hit the snake's head, b
 
 You can run it online 🤩 With Repl.it free hosting
 
-
+<a href="http://apple.hesamtavakoli06.repl.co/">
+  <img src="https://img.shields.io/badge/Repl.it-gray?style=flat&logo=repl.it&labelColor=gray" />
+</a>
 
 ## Use
 
-You just need to download `blessed`
+You just need to download `blessed` 🙂🙃
 
 ```bash
 pip3 install blessed
