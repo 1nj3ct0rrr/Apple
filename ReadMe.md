@@ -23,6 +23,12 @@ In this game you can move the apple or food using the right, left, up and down k
 
 To win, you have to pass the wining time (You should not hit the snake's head, because if you hit the snake's head, it mean you have lost, but if you pass the time, it means you have won) 🏅
 
+## Demo
+
+You can run it online 🤩 With Repl.it free hosting
+
+
+
 ## Use
 
 You just need to download `blessed`
