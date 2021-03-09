@@ -25,8 +25,6 @@ You should not hit the snake's head, because if you hit the snake's head, it mea
 
 ## Follow
 
-## Follow
-
 <p>
  <a href="https://repl.it/@hesamtavakoli06">
   <img src="https://img.shields.io/badge/Repl.it-gray?style=flat&logo=repl.it&labelColor=gray">
