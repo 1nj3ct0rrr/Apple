@@ -21,7 +21,7 @@ The game snake follows you as an apple and you have to escape from the snake, bu
 
 In this game you can move the apple or food using the right, left, up and down keys 😉
 
-You should not hit the snake's head, because if you hit the snake's head, it mean you have lost 😑
+To win, you have to pass the wining time (You should not hit the snake's head, because if you hit the snake's head, it mean you have lost, but if you pass the time, it means you have won) 🏅
 
 ## Follow
 
