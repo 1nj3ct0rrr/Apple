@@ -21,4 +21,44 @@ The game snake follows you as an apple and you have to escape from the snake, bu
 
 In this game you can move the apple or food using the right, left, up and down keys 😉
 
-To win, you have to hit the snake's body (You should not hit the snake's head, because if you hit the snake's head, it mean you have lost, but if you hit the snake's body, it means you have won) 🏅
+You should not hit the snake's head, because if you hit the snake's head, it mean you have lost 😑
+
+## Follow
+
+## Follow
+
+<p>
+ <a href="https://repl.it/@hesamtavakoli06">
+  <img src="https://img.shields.io/badge/Repl.it-gray?style=flat&logo=repl.it&labelColor=gray">
+ </a>
+</p>
+
+<p>
+ <a href="https://github.com/1nj3ct0rrr">
+  <img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github&labelColor=black">
+ </a>
+</p>
+
+<p>
+ <a href="https://codepen.io/1nj3ct0r">
+  <img src="https://img.shields.io/badge/CodePen-black?style=flat&logo=codepen&labelColor=black">
+ </a>
+</p>
+
+<p>
+ <a href="https://linkedin.com/in/1nj3ct0r">
+  <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue">
+ </a>
+</p>
+
+<p>
+ <a href="https://leetcode.com/1nj3ct0r/">
+  <img src="https://img.shields.io/badge/LeetCode-white?style=flat&logo=leetcode&labelColor=white">
+ </a>
+</p>
+
+<p>
+ <a href="https://www.hackerrank.com/1nj3ct0r">
+  <img src="https://img.shields.io/badge/HackerRank-black?style=flat&logo=hackerrank&labelColor=black">
+ </a>
+</p>
