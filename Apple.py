@@ -95,16 +95,9 @@ with term.cbreak(), term.hidden_cursor():
 
         preferred_move = None
         if abs(y_diff) > abs(x_diff):
-            if y_diff <= 0:
-                preferred_move = UP
-            else:
-                preferred_move = DOWN
+            preferred_move = UP if y_diff <= 0 else DOWN
         else:
-            if x_diff >= 0:
-                preferred_move = RIGHT
-            else:
-                preferred_move = LEFT
-
+            preferred_move = RIGHT if x_diff >= 0 else LEFT
         preferred_moves = [preferred_move] + list(DIRECTIONS)
 
         next_move = None
@@ -117,11 +110,10 @@ with term.cbreak(), term.hidden_cursor():
             if heading == BORDER:
                 continue
             elif heading == BODY:
-                if head_copy == snake[-1] and turn % M != 0:
-                    next_move = head_copy
-                    break
-                else:
+                if head_copy != snake[-1] or turn % M == 0:
                     continue
+                next_move = head_copy
+                break
             else:
                 next_move = head_copy
                 break
@@ -141,12 +133,13 @@ with term.cbreak(), term.hidden_cursor():
             world[next_move[0]][next_move[1]] = HEAD
 
         food_copy = copy.copy(food)
-        if val.code in DIRECTIONS or val in WASD_MAP.keys():
+        if (
+            val.code in DIRECTIONS
+            or val.code not in DIRECTIONS
+            and val in WASD_MAP.keys()
+        ):
             direction = None
-            if val in WASD_MAP.keys():
-                direction = WASD_MAP[val]
-            else:
-                direction = val.code
+            direction = WASD_MAP[val] if val in WASD_MAP.keys() else val.code
             movement = MOVEMENT_MAP[direction]
             food_copy[0] += movement[0]
             food_copy[1] += movement[1]
@@ -156,7 +149,7 @@ with term.cbreak(), term.hidden_cursor():
             dead = True
         if food_heading == SPACE:
             food = food_copy
-        if world[food[0]][food[1]] == BODY or world[food[0]][food[1]] == HEAD:
+        if world[food[0]][food[1]] in [BODY, HEAD]:
             dead = True
         if not dead:
             world[food[0]][food[1]] = APPLE
